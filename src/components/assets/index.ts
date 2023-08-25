@@ -1,0 +1,6 @@
+export {default as HeroImg} from "./Images/HeroImg.webp"
+export {default as baazar} from "./Images/baazar.webp"
+export {default as bustle} from "./Images/bustle.webp"
+export {default as instyle} from "./Images/instyle.webp"
+export {default as versace} from "./Images/versace.webp"
+export {default as KapraBazaar} from "./Images/KapraBazaar.png"

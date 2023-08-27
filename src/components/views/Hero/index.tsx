@@ -40,7 +40,7 @@ const Hero = () => {
         </div>
         {/* Right Side */}
         <div className="hidden md:flex bg-primaryWhite rounded-full ">
-          <Image src={HeroImg} alt="Hero Image" />
+          <Image src={HeroImg} alt="Hero Image"  />
         </div>
       </div>
     </div>

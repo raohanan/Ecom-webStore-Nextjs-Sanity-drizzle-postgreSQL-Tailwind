@@ -9,7 +9,12 @@ const config: Config = {
   theme: {
     extend: {
     colors:{
-      primaryWhite:"#FFECE3"
+      primaryWhite:"#FFECE3",
+      opacityDownColor:"#ffffffba",
+      col1:"#D6D6D8",
+      col2:"#EFE1C7",
+      col3:"#D6D6D8",
+      col4:"#212121",
     }
     },
   },

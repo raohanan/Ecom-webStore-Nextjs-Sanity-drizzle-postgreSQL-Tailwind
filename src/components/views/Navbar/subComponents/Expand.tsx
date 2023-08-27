@@ -34,6 +34,7 @@ const Expand: FC<{ item: NavbarItemType }> = ({ item }) => {
         {isExpended &&
           item.dropDownData?.map((subItem: NavbarItemType, index: number) => (
             <Link
+            key={index}
               className="px-5 hover:bg-gray-100 py-1 rounded-md duration-300"
               href={subItem.href}
             >

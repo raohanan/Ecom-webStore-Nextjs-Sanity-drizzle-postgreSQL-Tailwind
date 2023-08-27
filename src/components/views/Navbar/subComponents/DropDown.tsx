@@ -2,12 +2,12 @@ import { NavbarItemType } from "@/components/utils/NavbarArrayAndTypes"
 import Link from "next/link"
 import {FC} from "react"
 
-const DropDown: FC<{item: NavbarItemType}> = ({item}) => {
+const DropDown: FC<{item: NavbarItemType, index:number}> = ({item}) => {
   return (
     <ul>
-        {item.dropDownData?.map((item: NavbarItemType,index:number)=>(
-            <li className="hover:ml-2 group-hover:duration-300 -translate-y-6 group-hover:translate-y-0">
-                <Link href={item.href}>{item.label}</Link>
+        { item.dropDownData?.map((item: NavbarItemType,index:number)=>(
+            <li key={index} className="hover:ml-2 group-hover:duration-300 -translate-y-6 group-hover:translate-y-0">
+                <Link  href={item.href}>{item.label}</Link>
             </li>
         ))}
     </ul>

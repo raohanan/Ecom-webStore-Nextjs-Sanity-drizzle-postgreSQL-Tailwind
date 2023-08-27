@@ -1,6 +1,9 @@
-export {default as HeroImg} from "./Images/HeroImg.webp"
-export {default as baazar} from "./Images/baazar.webp"
-export {default as bustle} from "./Images/bustle.webp"
-export {default as instyle} from "./Images/instyle.webp"
-export {default as versace} from "./Images/versace.webp"
-export {default as KapraBazaar} from "./Images/KapraBazaar.png"
+export { default as HeroImg } from "./Images/HeroImg.webp";
+export { default as baazar } from "./Images/baazar.webp";
+export { default as bustle } from "./Images/bustle.webp";
+export { default as instyle } from "./Images/instyle.webp";
+export { default as versace } from "./Images/versace.webp";
+export { default as KapraBazaar } from "./Images/KapraBazaar.png";
+export { default as SummerSeason } from "./productImages/event1.webp";
+export { default as SummerSeason2 } from "./productImages/event2.webp";
+export { default as SummerSeason3 } from "./productImages/event3.webp";

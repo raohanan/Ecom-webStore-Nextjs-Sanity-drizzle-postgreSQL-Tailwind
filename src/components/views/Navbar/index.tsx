@@ -19,7 +19,7 @@ const Navbar = () => {
   const [isNavbarOpen, setNavbarOpen] = useState<boolean>(false);
   const [cartItemNumber, setcartItemNumber] = useState<number>(0);
   return (
-    <div className="sticky top-0 bg-white">
+    <div className="sticky top-0 backdrop-blur-sm bg-opacityDownColor">
       <div className="py-6 flex justify-between items-center space-x-12">
         <div className="w-36 flex-shrink-0">
           <Image width={500} height={500} src={"/Logo.webp"} alt="Logo" />
@@ -27,7 +27,7 @@ const Navbar = () => {
         <div className="hidden lg:flex justify-between items-center w-full">
           <ul className="flex space-x-4 text-lg font-medium">
             {NavbarArray.map((item: NavbarItemType, index: number) => (
-              <li className="flex items-center relative rounded-md px-3 py-1 hover:bg-gray-100 cursor-pointer group">
+              <li key={index} className="flex items-center relative rounded-md px-3 py-1 hover:bg-gray-100 cursor-pointer group">
                 <Link href={item.href}>{item.label}</Link>
                 {item.isDropDown ? (
                   <HiOutlineChevronDown
@@ -39,7 +39,7 @@ const Navbar = () => {
                 )}
                 {item.isDropDown && (
                   <div className="invisible group-hover:visible absolute top-8 left-0 py-4 px-6 bg-gray-100 font-light rounded-md min-w-[7rem]">
-                    <DropDown item={item} />
+                    <DropDown index={index} item={item} />
                   </div>
                 )}
               </li>

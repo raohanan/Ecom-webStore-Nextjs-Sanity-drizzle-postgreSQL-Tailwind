@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const productCarousel = () => {
-  return (
-    <div>productCarousel</div>
-  )
-}
+const ProductCarousel = ({ productData }: any) => {
+  return <div>ProductCarousel</div>;
+};
 
-export default productCarousel
+export default ProductCarousel;

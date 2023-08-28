@@ -1,4 +1,25 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+const { hostname } = require("os");
 
-module.exports = nextConfig
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "raohanan-ecom-web-store.vercel.app/",
+        pathname: "/**",
+      },
+    ],
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.sanity.io",
+        pathname: "/**",
+      },
+    ],
+  },
+};
+
+module.exports = nextConfig;

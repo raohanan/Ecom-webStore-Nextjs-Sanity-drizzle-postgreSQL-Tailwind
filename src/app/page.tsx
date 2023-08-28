@@ -4,12 +4,13 @@ import ProductTypes from "@/components/views/ProductTypes";
 // import ProductCarousel from "@/components/views/ProductCarousel";
 
 async function fetchAllProductsData() {
-  let res = await fetch(`${BASE_PATH_FORAPI}/api/products`);
+  // let res = await fetch(`${BASE_PATH_FORAPI}/api/products`);
 
-  if (!res.ok) {
-    throw new Error("Failed to fetch");
-  }
-  return res.json();
+  // if (!res.ok) {
+  //   throw new Error("Failed to fetch");
+  // }
+  // return res.json();
+  return {response: "Hi"}
 }
 
 export default async function Home() {

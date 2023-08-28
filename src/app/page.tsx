@@ -1,7 +1,7 @@
 import BASE_PATH_FORAPI from "@/components/shared/BasePath";
 import Hero from "@/components/views/Hero";
 import ProductTypes from "@/components/views/ProductTypes";
-import ProductCarousel from "@/components/views/ProductCarousel";
+// import ProductCarousel from "@/components/views/ProductCarousel";
 
 async function fetchAllProductsData() {
   let res = await fetch(`${BASE_PATH_FORAPI}/api/products`);
@@ -19,7 +19,7 @@ export default async function Home() {
     <div>
       <Hero />
       <ProductTypes />
-      <ProductCarousel productData={response} />
+      {/* <ProductCarousel productData={response} /> */}
     </div>
   );
 }

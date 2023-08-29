@@ -3,6 +3,7 @@ import Hero from "@/components/views/Hero";
 import ProductTypes from "@/components/views/ProductTypes";
 import ProductCarousel from "@/components/views/ProductCarousel";
 import { responseType } from "@/components/utils/ProductDataArrayTypes";
+import Jewellery from "@/components/views/Jewellery";
 
 async function fetchAllProductsData() {
   let res = await fetch(`https://${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}.api.sanity.io/v2021-06-07/data/query/production?query=*[_type == "products"]`);
@@ -20,6 +21,7 @@ export default async function Home() {
       <Hero />
       <ProductTypes />
       <ProductCarousel ProductData={result} />
+      <Jewellery />
     </div>
   );
 }

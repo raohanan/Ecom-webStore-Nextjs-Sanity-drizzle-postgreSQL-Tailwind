@@ -1,7 +1,6 @@
-import BASE_PATH_FORAPI from "@/components/shared/BasePath";
 import Hero from "@/components/views/Hero";
 import ProductTypes from "@/components/views/ProductTypes";
-import ProductCarousel from "@/components/views/ProductCarousel";
+import {ProductCarousel} from "@/components/views/ProductCarousel";
 import { responseType } from "@/components/utils/ProductDataArrayTypes";
 import Jewellery from "@/components/views/Jewellery";
 import NewsLatter from "@/components/views/NewsLatter";

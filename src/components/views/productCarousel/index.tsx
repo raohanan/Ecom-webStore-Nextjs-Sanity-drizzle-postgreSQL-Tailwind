@@ -19,7 +19,7 @@ import Card from "../Card";
 // };
 // export default ProductCarousel;
 
-export default class ProductCarousel extends Component<{
+export class ProductCarousel extends Component<{
   ProductData: Array<oneProductType>;
 }> {
   render(): ReactNode {
@@ -48,7 +48,7 @@ export default class ProductCarousel extends Component<{
       <div>
         <Slider {...settings}>
           {this.props.ProductData.map((item: oneProductType, index: number) => (
-            <Card singleProductData={item} />
+            < Card key={index} singleProductData={item}/>
           ))}
         </Slider>
       </div>

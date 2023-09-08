@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Maven_Pro } from "next/font/google";
 import Wrapper from "@/components/shared/Wrapper";
+import Footer from "@/components/views/Footer";
 
 const inter = Maven_Pro({
   subsets: ["latin"],
@@ -23,8 +24,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Wrapper>
-          {/* <Navbar /> */}
-          {children}
+          <Navbar />
+          <div className="min-h-screen">{children}</div>
+          <Footer />
         </Wrapper>
       </body>
     </html>

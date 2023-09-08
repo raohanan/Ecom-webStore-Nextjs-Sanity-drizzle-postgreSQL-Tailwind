@@ -7,3 +7,4 @@ export { default as KapraBazaar } from "./Images/KapraBazaar.png";
 export { default as SummerSeason } from "./productImages/event1.webp";
 export { default as SummerSeason2 } from "./productImages/event2.webp";
 export { default as SummerSeason3 } from "./productImages/event3.webp";
+export { default as SummerSeason4 } from "./productImages/event4.webp";

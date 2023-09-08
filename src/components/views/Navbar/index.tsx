@@ -19,11 +19,11 @@ const Navbar = () => {
   const [isNavbarOpen, setNavbarOpen] = useState<boolean>(false);
   const [cartItemNumber, setcartItemNumber] = useState<number>(0);
   return (
-    <div className="sticky top-0 backdrop-blur-sm bg-opacityDownColor">
+    <div className="sticky z-50 top-0 backdrop-blur-sm bg-opacityDownColor">
       <div className="py-6 flex justify-between items-center space-x-12">
-        <div className="w-36 flex-shrink-0">
+        <Link href="/" className="w-36 flex-shrink-0">
           <Image width={500} height={500} src={"/Logo.webp"} alt="Logo" />
-        </div>
+        </Link>
         <div className="hidden lg:flex justify-between items-center w-full">
           <ul className="flex space-x-4 text-lg font-medium">
             {NavbarArray.map((item: NavbarItemType, index: number) => (
